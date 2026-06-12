@@ -83,6 +83,18 @@
     padding:5px;
 }
 
+.multipagecontainer { /*for things like comics; the div*/
+    display: flex;
+    justify-content: center; /*horizontal alignment of whole container*/
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.multipage { /*individual comic images */
+    justify-items: center; /*horizontal alignment based on each individual child element*/
+    max-height:500px;
+    padding: 10px 10px 10px 10px;
+}
 
 
 
