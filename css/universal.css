@@ -237,7 +237,28 @@ p { /*use this for smaller descriptive text*/
 /*===================================MOBILE + NARROW SCREEN FORMATTING===========================================*/
 
 @media screen and (max-width: 900px) {
-    
+
+    .header { /*so name is abouve contact icons*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 3fr;
+        background-color: #9579C2;
+        width: 100%;
+    }
+
+    #beatty {
+        margin: 0% 2% 1% 4%;
+    }
+
+    #jobtitle {
+        margin:0;
+    }
+
+    #socialscontainer {
+        margin-left: 0%;
+        padding-left: 0;
+    }
+
     .content { /*so sidebar is on top*/
         display: contents;
     }
@@ -246,7 +267,7 @@ p { /*use this for smaller descriptive text*/
         background-color: #634E68;
         display: flex;
         flex-direction: column;
-        padding: 1% 3% 3% 3%;
+        padding: 0% 3% 5% 5%;
         margin-left: 10%;
         margin-right: 10%;
         position: revert; /*not sticky in mobile view, for simplicity*/
