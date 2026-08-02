@@ -225,9 +225,19 @@ p { /*use this for smaller descriptive text*/
 }
 
 
+.aboutlink { /*For the socials links in about me*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    justify-items:right;
+}
+
+
 /*===================================MOBILE + NARROW SCREEN FORMATTING===========================================*/
 
 @media screen and (max-width: 900px) {
+    
     .content { /*so sidebar is on top*/
         display: contents;
     }
@@ -268,7 +278,13 @@ p { /*use this for smaller descriptive text*/
         left: 10%;
         top:3px;
     }
-    
+
+    /*fix vertical spacing in cramped lines*/
+    p {
+        
+       
+    }
+
 }
 
 

@@ -33,8 +33,7 @@
 .gallerythumb { /*thumbnails for gallery images*/
     padding-top: 25px;
     width: 100%;
-    border-radius: 10px; /*rounded bottom only, idk why it does that on images */
-    
+    border-radius: 10px; /*rounded bottom only, idk why it does that on images */ 
 }
 
 .navbar { /*Back/Forward in Documentation*/
@@ -99,14 +98,18 @@
 
 /*===================================MOBILE + NARROW SCREEN FORMATTING===========================================*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) { 
+    /*max width - will switch to horz. styling for gallery select buttons sooner than when the sidebar, etc. styling will switch*/
+
     .galleryselect {
-        border-radius: 15px;
         justify-items: center; /*horizontal alignment based on each individual child element*/
-        width: 75%;
+        width: 75% !important; /*important will override the html formatting if i specified a different width there*/
         padding: 15px 25px 15px 25px;
-        background-color: #B7F0EC;
-        overflow: hidden;
+    }
+
+    .gallerythumb { /*thumbnails for gallery images*/
+        padding-top: 15px;
+        width: 80%;
     }
 }
 
