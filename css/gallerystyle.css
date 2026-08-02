@@ -111,5 +111,11 @@
         padding-top: 15px;
         width: 80%;
     }
+
+    /*narrower margins in mobile view so there's more room for the content*/
+    .coolborder {
+        padding: 5px;
+        border: 10px solid;
+    }
 }
 
