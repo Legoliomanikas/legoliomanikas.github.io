@@ -29,6 +29,12 @@ p { /*use this for smaller descriptive text*/
     color: #FF557C;
 }
 
+pre {
+    margin: 5px;
+    font-size: 18px;
+    color: #FF557C;
+}
+
 /*==========================header specific===============================*/
 .header {
     display: grid;
@@ -238,7 +244,7 @@ p { /*use this for smaller descriptive text*/
 
 @media screen and (max-width: 900px) {
 
-    .header { /*so name is abouve contact icons*/
+    .header { /*so name is above contact icons*/
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 4fr 3fr;
@@ -247,26 +253,22 @@ p { /*use this for smaller descriptive text*/
     }
 
     #beatty {
-        margin: 0% 2% 1% 4%;
+        font-size: 30px;
+        margin: 0% 4% 1% 4%;
     }
-
     #jobtitle {
-        margin:0;
+        font-size: 20px;
+        margin: 0% 4% 0% 0%;
     }
-
     #socialscontainer {
         margin-left: 0%;
         padding-left: 0;
     }
-
     .content { /*so sidebar is on top*/
         display: contents;
     }
 
     .sidebar {
-        background-color: #634E68;
-        display: flex;
-        flex-direction: column;
         padding: 0% 3% 5% 5%;
         margin-left: 10%;
         margin-right: 10%;
@@ -284,46 +286,44 @@ p { /*use this for smaller descriptive text*/
         padding: 5px;
         padding-left: 10px;
         padding-right: 10px;
-        background-color: #B7F0EC;
-        color: #66073B;
         /*indented to the left*/
         position: relative;
         left: 10%;
     }
 
-    .navbutton2:hover { /*swaps bg and text colros on hover*/
-        background-color: #66073B;
-        color: #B7F0EC;
+    .navbutton2:hover {
         /*indented down*/
         position: relative;
         left: 10%;
         top:3px;
     }
+}
 
-    /*fix vertical spacing in cramped lines*/
-    p {
-        
-       
+@media screen and (max-width: 1000px) {
+    /*styling happens sooner, larger max width than prior*/
+
+
+}
+
+
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* ===== Scrollbar CSS ===== */
+    /*Using this site: https://codepen.io/stephenpaton-tech/full/JjRvGmY */
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #9579C2 #634E68;
     }
+        /* Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 10px;
+        }
 
-}
+        *::-webkit-scrollbar-track {
+            background: #634E68;
+        }
 
-
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* ===== Scrollbar CSS ===== */
-/*Using this site: https://codepen.io/stephenpaton-tech/full/JjRvGmY */
-/* Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #9579C2 #634E68;
-}
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 10px;
-}
-*::-webkit-scrollbar-track {
-    background: #634E68;
-}
-*::-webkit-scrollbar-thumb {
-    background-color: #9579C2;
-}
+        *::-webkit-scrollbar-thumb {
+            background-color: #9579C2;
+        }
