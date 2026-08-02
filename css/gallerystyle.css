@@ -97,6 +97,16 @@
 }
 
 
+/*===================================MOBILE + NARROW SCREEN FORMATTING===========================================*/
 
-
+@media screen and (max-width: 900px) {
+    .galleryselect {
+        border-radius: 15px;
+        justify-items: center; /*horizontal alignment based on each individual child element*/
+        width: 75%;
+        padding: 15px 25px 15px 25px;
+        background-color: #B7F0EC;
+        overflow: hidden;
+    }
+}
 

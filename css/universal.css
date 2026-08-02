@@ -225,6 +225,53 @@ p { /*use this for smaller descriptive text*/
 }
 
 
+/*===================================MOBILE + NARROW SCREEN FORMATTING===========================================*/
+
+@media screen and (max-width: 900px) {
+    .content { /*so sidebar is on top*/
+        display: contents;
+    }
+
+    .sidebar {
+        background-color: #634E68;
+        display: flex;
+        flex-direction: column;
+        padding: 1% 3% 3% 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: revert; /*not sticky in mobile view, for simplicity*/
+        height: auto;
+    }
+
+    .navbutton2container{ /*so the subcategories are arranged horizontally*/
+        display:flex;
+        flex-wrap:wrap;
+        max-width: 90%;
+    }
+
+    .navbutton2 {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #B7F0EC;
+        color: #66073B;
+        /*indented to the left*/
+        position: relative;
+        left: 10%;
+    }
+
+    .navbutton2:hover { /*swaps bg and text colros on hover*/
+        background-color: #66073B;
+        color: #B7F0EC;
+        /*indented down*/
+        position: relative;
+        left: 10%;
+        top:3px;
+    }
+    
+}
+
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* ===== Scrollbar CSS ===== */
 /*Using this site: https://codepen.io/stephenpaton-tech/full/JjRvGmY */
